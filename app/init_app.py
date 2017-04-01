@@ -1,6 +1,5 @@
-# Copyright 2014 SolidBuilds.com. All rights reserved
-#
-# Authors: Ling Thio <ling.thio@gmail.com>
+
+# Author: Himanshu Gautam
 
 from datetime import datetime
 from flask import Flask
