@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang ="en">
     <head>
         <meta charset="UTF-8" >
@@ -21,19 +21,19 @@
         <!-- <link rel="icon" href="//foliotek.github.io/favico-64.png" /> -->
     </head>
     <body>
-        
-        
-        
+
+
+
 
         <section class="documentation">
             <a id="documentation" name="documentation"></a>
             <div class="section-header"><h2>DermaScan</h2></div>
             <div class="container">
-                
+
                 <section>
                     <h3></h3>
                     <ul>
-                        
+
                     </ul>
                 </section>
             </div>
@@ -44,7 +44,7 @@
                     <div class="container">
                     <div class="grid" style="overflow: visible; padding-bottom: 5%;">
                         <div class="col-1-2">
-                            
+
                             <div class="actions">
                                 <a class="btn file-btn">
                                     <span>Scan</span>
@@ -64,16 +64,29 @@
                     </div>
                 </div>
                 </div>
-                
+
         </section>
 
+        <section style="margin-left:30%">
+          <h4>Select symptoms</h4>
+          <input type="checkbox" name="value1" value="symptom1"> Itching </br>
+          <input type="checkbox" name="value2" value="symptom2"> Irritation </br>
+          <input type="checkbox" name="value3" value="symptom3"> Swelling </br>
+          <input type="checkbox" name="value4" value="symptom4"> blah blah blah </br>
+
+          <h4>Other description<h4>
+            <textarea style="resize: none" rows="4" cols="50" placeholder="enter other vital information here including above missed symptoms">
+            </textarea>
+        </section>
+
+      <hr>
 
         <section>
             enerating HTML from within Python is not fun, and actually pretty cumbersome because you have to do the HTML escaping on your own to keep the application secure. Because of that Flask configures the Jinja2 template engine for you automatically.
 
 To render a template you can use the render_template() method. All you have to do is provide the name of the template and the variables you want to pass to the template engine as keyword arguments. Here’s a simple example of how to render a template:
         </section>
-        
+
         <footer>
             Copyright &copy; 2016 | Foliotek
         </footer>
@@ -82,10 +95,10 @@ To render a template you can use the render_template() method. All you have to d
         <script src="{{ url_for('static', filename='dependencies/croppie.min.js') }}"></script>
         <script src="{{ url_for('static', filename='dependencies/demo.js') }}"></script>
         <script src="{{ url_for('static', filename='dependencies/exif.js') }}"></script>
-        
+
         <script>
             Demo.init();
         </script>
-        
+
     </body>
 </html>
