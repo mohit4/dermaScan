@@ -42,7 +42,7 @@
         <section>
                 <div class="demo-wrap upload-demo">
                     <div class="container">
-                    <div class="grid">
+                    <div class="grid" style="overflow: visible; padding-bottom: 5%;">
                         <div class="col-1-2">
                             
                             <div class="actions">
@@ -55,7 +55,7 @@
                         </div>
                         <div class="col-1-2">
                             <div class="upload-msg">
-                                Upload a file to start cropping
+                                Add image to start cropping
                             </div>
                             <div class="upload-demo-wrap">
                                 <div id="upload-demo"></div>
@@ -68,7 +68,11 @@
         </section>
 
 
-        
+        <section>
+            enerating HTML from within Python is not fun, and actually pretty cumbersome because you have to do the HTML escaping on your own to keep the application secure. Because of that Flask configures the Jinja2 template engine for you automatically.
+
+To render a template you can use the render_template() method. All you have to do is provide the name of the template and the variables you want to pass to the template engine as keyword arguments. Here’s a simple example of how to render a template:
+        </section>
         
         <footer>
             Copyright &copy; 2016 | Foliotek

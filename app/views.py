@@ -1,5 +1,6 @@
-
-# Author: Himanshu Gautam
+# Copyright 2014 SolidBuilds.com. All rights reserved
+#
+# Authors: Ling Thio <ling.thio@gmail.com>
 
 
 from flask import redirect, render_template, render_template_string, Blueprint
@@ -9,9 +10,9 @@ from app.init_app import app, db
 from app.models import UserProfileForm
 
 # The Home page is accessible to anyone
-# @app.route('/')
-# def home_page():
-    # return render_template('pages/home_page.html')
+@app.route('/')
+def home_page():
+    return render_template('test/test.html')
 
 
 # The User page is accessible to authenticated users (users that have logged in)
@@ -49,7 +50,29 @@ def user_profile_page():
     return render_template('pages/user_profile_page.html',
                            form=form)
 
-UPLOAD_FOLDER = '/home/himanshu/SIH/web'
+
+UPLOAD_FOLDER = '/home/himanshu/SIH/web/images'
+# from PIL import Image
+# from io import BytesIO
+# import base64
+import json
+import time
+import base64
+@app.route('/test1', methods=['GET', 'POST'])
+def test():
+    try:
+        a = request.form
+        filename  = str(int(time.time())) + '.png'
+        filepath = UPLOAD_FOLDER + '/' + filename
+        img_data = a['img_data'].split(',')[1]
+
+        with open(filepath, "wb") as fh:
+            fh.write(base64.b64decode(img_data))
+        return json.dumps({"success": True})
+    except: 
+        return json.dumps({"success": False})
+
+
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
@@ -65,7 +88,7 @@ def allowed_file(filename):
 def uploaded_file(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/test', methods=['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
         if 'file' not in request.files:
