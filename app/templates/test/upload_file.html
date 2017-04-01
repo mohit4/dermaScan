@@ -1,0 +1,11 @@
+{% extends "common/page_base.html" %}  {# common/page_base.html extends layout.html #}
+
+{% block content %}
+<h1>Home page</h1>
+
+    <h1>Upload new File</h1>
+    <form method=post enctype=multipart/form-data>
+    <p><input type=file name=file></p>
+    <p><input type=submit value=Upload></p>
+
+{% endblock %}
