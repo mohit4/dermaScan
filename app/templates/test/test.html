@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" >
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Croppie - a simple javascript image cropper - Foliotek</title>
+        <title>DermaScan | one stop scan</title>
 
         <meta name="description" content="Croppie is an easy to use javascript image cropper.">
 
@@ -21,9 +21,6 @@
         <!-- <link rel="icon" href="//foliotek.github.io/favico-64.png" /> -->
     </head>
     <body>
-
-
-
 
         <section class="documentation">
             <a id="documentation" name="documentation"></a>
@@ -64,44 +61,172 @@
                     </div>
                 </div>
                 </div>
-
         </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <section style="margin-left:30%">
+        <section style="padding-left:30%">
           <h4>Select symptoms</h4>
-          <input type="checkbox" name="value1" value="symptom1"> Blister(s) </br>
-          <input type="checkbox" name="value2" value="symptom2"> Fizzures </br>
-          <input type="checkbox" name="value3" value="symptom3"> Flakiness </br>
-          <input type="checkbox" name="value4" value="symptom4"> Stinging </br>
-          <input type="checkbox" name="value5" value="symptom5"> Thickness </br>
-          <input type="checkbox" name="value6" value="symptom6"> Scales </br>
-          <input type="checkbox" name="value7" value="symptom7"> Darkening of the skin </br>
-          <input type="checkbox" name="value8" value="symptom8"> Loss of colour </br>
-          <input type="checkbox" name="value9" value="symptom9"> Peeling </br>
-          <input type="checkbox" name="value10" value="symptom10"> Rashes </br>
-          <input type="checkbox" name="value11" value="symptom11"> Small bump(s) </br>
-          <input type="checkbox" name="value12" value="symptom12"> Ulcers </br>
-          <input type="checkbox" name="value13" value="symptom13"> Redness of skin </br>
-          <input type="checkbox" name="value14" value="symptom14"> Sores </br>
+          <h4 style="color:#0091ea">लक्षण चुनें</h4>
+          <p>In case you are having any of the below symptoms, please provide information</p>
+          <p style="color:#0091ea">यदि आपको निम्न लक्षणों में से कोई भी हो, तो कृपया जानकारी प्रदान करें</p>
+          <table>
+            <tr>
+              <th>Symptom <p style="color:#0091ea">लक्षण</p></th>
+              <th>Duration <p style="color:#0091ea">अवधि</p></th>
+              <!-- <th>Body part</th> -->
+            </tr>
+            <tr>
+              <td><label><input type="checkbox" name="value1" value="symptom1"> Blister(s) </br></label></td>
+              <td><input type="number">
+                <select>
+                  <option value="days"> Days </option>
+                  <option value="weeks"> Weeks </option>
+                  <option value="months"> Months </option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label><input type="checkbox" name="value2" value="symptom2"> Fissures </br></label></td>
+              <td><input type="number">
+                <select>
+                  <option value="days"> Days </option>
+                  <option value="weeks"> Weeks </option>
+                  <option value="months"> Months </option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label><input type="checkbox" name="value3" value="symptom3"> Flakiness </br></label></td>
+              <td><input type="number">
+                <select>
+                  <option value="days"> Days </option>
+                  <option value="weeks"> Weeks </option>
+                  <option value="months"> Months </option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label><input type="checkbox" name="value4" value="symptom4"> Stinging </br></label></td>
+              <td><input type="number">
+                <select>
+                  <option value="days"> Days </option>
+                  <option value="weeks"> Weeks </option>
+                  <option value="months"> Months </option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label><input type="checkbox" name="value5" value="symptom5"> Thickness </br></label></td>
+              <td><input type="number">
+                <select>
+                  <option value="days"> Days </option>
+                  <option value="weeks"> Weeks </option>
+                  <option value="months"> Months </option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label><input type="checkbox" name="value6" value="symptom6"> Scales </br></label></td>
+              <td><input type="number">
+                <select>
+                  <option value="days"> Days </option>
+                  <option value="weeks"> Weeks </option>
+                  <option value="months"> Months </option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label><input type="checkbox" name="value7" value="symptom7"> Darkening of the skin </br></label></td>
+              <td><input type="number">
+                <select>
+                  <option value="days"> Days </option>
+                  <option value="weeks"> Weeks </option>
+                  <option value="months"> Months </option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label><input type="checkbox" name="value8" value="symptom8"> Loss of colour </br></label></td>
+              <td><input type="number">
+                <select>
+                  <option value="days"> Days </option>
+                  <option value="weeks"> Weeks </option>
+                  <option value="months"> Months </option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label><input type="checkbox" name="value9" value="symptom9"> Peeling </br></label></td>
+              <td><input type="number">
+                <select>
+                  <option value="days"> Days </option>
+                  <option value="weeks"> Weeks </option>
+                  <option value="months"> Months </option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label><input type="checkbox" name="value10" value="symptom10"> Rashes </br></label></td>
+              <td><input type="number">
+                <select>
+                  <option value="days"> Days </option>
+                  <option value="weeks"> Weeks </option>
+                  <option value="months"> Months </option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label><input type="checkbox" name="value11" value="symptom11"> Small bump(s) </br></label></td>
+              <td><input type="number">
+                <select>
+                  <option value="days"> Days </option>
+                  <option value="weeks"> Weeks </option>
+                  <option value="months"> Months </option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label><input type="checkbox" name="value12" value="symptom12"> Ulcers </br></label></td>
+              <td><input type="number">
+                <select>
+                  <option value="days"> Days </option>
+                  <option value="weeks"> Weeks </option>
+                  <option value="months"> Months </option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label><input type="checkbox" name="value13" value="symptom13"> Redness of skin </br></label></td>
+              <td><input type="number">
+                <select>
+                  <option value="days"> Days </option>
+                  <option value="weeks"> Weeks </option>
+                  <option value="months"> Months </option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label><input type="checkbox" name="value14" value="symptom14"> Sores </br></label></td>
+              <td><input type="number">
+                <select>
+                  <option value="days"> Days </option>
+                  <option value="weeks"> Weeks </option>
+                  <option value="months"> Months </option>
+                </select>
+              </td>
+            </tr>
+          </table>
+
+          <br>
 
           <h4>Other description<h4>
-            <textarea style="resize: none" rows="4" cols="50" placeholder="enter other vital information here including above missed symptoms">
-            </textarea>
+          <h4 style="color:#0091ea">अन्य विवरण</h4>
+          <textarea style="resize: none" rows="4" cols="50" placeholder="enter any other vital information here in case of any missed symptoms"></textarea>
+
+          <br>
+
+          <h4>Are you taking any drug under medical prescription?</h4>
+          <h4 style="color:#0091ea">क्या आप मेडिकल प्रिस्क्रिप्शन के तहत कोई दवा ले रहे हैं?</h4>
+          <textarea id="drug_info" style="resize: none" rows="4" cols="50" placeholder="provide the name of the drugs separated by comma"></textarea>
         </section>
 
       <hr>
